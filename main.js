@@ -11,7 +11,7 @@ const $campoTexto = d.querySelector("#message"),
 
 
 
-  // desactivar Enter(para evitar encriptar mensajes encriptados)
+  // desactivar Enter(para seleccionar obligatoriamente una opcion)
   window.addEventListener("keypress", function(event){
     if (event.keyCode == 13){
         event.preventDefault();
