@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./assets/letra-e.png"/>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <h1>Encriptador</h1>
+        <div class="card-flex">
+            <form class="form">
+                <div class="form__text">
+                <textarea autofocus id="message" class="form__desencriptar" type="text" placeholder="Ingrese el texto aquí"></textarea>
+                <p class="form__alert"><span class="material-icons">info</span></span>Solo letras minúsculas y sin acentos</p>
+                </div>
+            <div class="form__inputs">
+                <input id="btnEncriptar" class="form__input" type="submit" value="Encriptar">
+                <input id="btnDesencriptar" class="form__input" type="submit" value="Desencriptar">
+            </div>
+        </form>
+        
+        <div class="result">
+            <div id="sinMensaje" class="result__hidden">
+                <img class="img-cat" src="./assets/cat.svg" alt="imagen gato-no hay contenido">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div>
+            <div class="result__text ocultar">
+                <textarea id="resultado" class="desencriptado" disabled></textarea>
+                <button id="btnCopiar" class="form__input">Copiar</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    </body>
+</html>

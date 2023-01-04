@@ -1,0 +1,233 @@
+/*
+PALETA DE COLORES 
+#243763
+#FF6E31
+#FFEBB7
+#AD8E70 */
+
+:root{
+    --color-main: #243763;
+    --color-second: ##FF6E31;
+    --color-white: #ffffff;
+    --color-brown: #AD8E70;
+}
+
+
+body{
+    font-family: 'Signika Negative', sans-serif;
+    background-color: var(--color-white);
+    color: var(--color-main);
+    
+}
+
+h1{
+    text-align: center;
+}
+
+.card-flex{
+    background: var(--color-white);
+    padding: 20px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.form__text{
+    width: 100%;
+
+}
+.form{
+    width: 100%;
+}
+
+.form__desencriptar{
+
+    width: 100%;
+    min-height: 200px;
+    background-color: var(--color-white);
+    resize: none;
+    padding: 10px;
+    border: none;
+    color: #243763;
+    font-size: 1.4em;
+    
+}
+
+.form__desencriptar::placeholder{
+    font-size: 1.4em;
+    color: var(--color-main);    
+
+}
+
+.form__alert{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.alert-active{
+    color :rgb(211, 47, 47);
+    font-weight: bold;
+}
+
+.form__alert span{
+    margin-right: 5px;
+}
+
+.form__desencriptar:focus-visible{
+    outline: none;    
+    border: none;
+}
+
+.form__inputs{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form__input{
+    min-width: 150px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: thin solid var(--color-main);
+    color: var(--color-main);
+    transition: transform .4s ease;
+}
+
+.form__input:first-child{
+    background-color: var(--color-main);
+    color: var(--color-white);
+}
+
+.form__input:hover{
+    cursor: pointer;
+    background: var(--color-main);
+    color: var(--color-white);
+}
+
+
+.form__input:active{
+    background: var(--color-main);    
+    color: var(--color-white);
+    transform: scale(.9);
+}
+
+.result{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: var(--color-white);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px  20px 0px  #ccc;
+    border-top: 1px solid #ccc;
+    
+}
+
+.result__hidden{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result__hidden p{
+    margin: 0;}
+
+.img-cat{
+    max-width: 100%;
+    height: auto;
+}
+
+.result__text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desencriptado{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background: var(--color-white);
+    color: var(--color-main);
+    resize: none;
+    font-size: 1.4em;
+}
+
+
+.desencriptado:focus-visible{
+    outline: none;   
+
+}
+
+.ocultar{
+    display: none;
+}
+
+@media only screen and (min-width:768px) {
+   
+    .card-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .form{
+        max-width: 45%;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 0;
+        padding: 20px;
+    }
+
+    .form__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .form__desencriptar{
+        height: 80%; 
+    }
+
+    .result{
+        min-width: 40%;
+        max-width: 40%;
+    }
+
+    .form__inputs{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .form__input{
+        width: 50%;
+    }
+
+   
+}
+
+
+@media only screen and (min-width:1400px) {
+   
+    .card-flex{
+        max-width: 1420px;
+        text-align: center;
+        justify-content: space-around;
+        
+    }
+   
+    .result{
+        max-width: 45%;
+    }
+
+}
